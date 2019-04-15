@@ -1,7 +1,13 @@
+require_relative './capybara_watcher/configuration'
+
 module CapybaraWatcher
+  def self.configure
+    yield Configuration.options
+  end
+
   def looped?
     # define N seconds to let test continue.
-    @seconds >= 4
+    @seconds >= Configuration.options[:timeout]
   end
 
   def wait_for_changes(repeat = 1)
