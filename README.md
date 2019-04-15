@@ -44,6 +44,13 @@ Or in Gemfile
 gem 'capybara_watcher'
 ```
 
+On your `rails_helper.rb`
+```ruby
+...
+config.include CapybaraWatcher, type: :feature
+...
+```
+
 ## Built With
 
 * [Ruby](https://www.ruby-lang.org/es/) - A PROGRAMMER'S BEST FRIEND
