@@ -51,6 +51,16 @@ config.include CapybaraWatcher, type: :feature
 ...
 ```
 
+#### Configuring
+On your `rails_helper.rb`
+```ruby
+CapybaraWatcher.configure do |options|
+  options.timeout = 5 # Time in seconds
+end
+```
+
+> The timeout option has a default value of 2 (seconds), and this means that a when CapybaraWatcher wait more than this time, it automatically continue with the program.
+
 ## Built With
 
 * [Ruby](https://www.ruby-lang.org/es/) - A PROGRAMMER'S BEST FRIEND
