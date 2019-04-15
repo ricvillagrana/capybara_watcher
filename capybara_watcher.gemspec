@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'capybara_watcher'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.date        = '2019-04-15'
   s.summary     = 'Capybara Watcher.'
   s.description = "Watch body elements and wait for changes in Capybara integration tests."
