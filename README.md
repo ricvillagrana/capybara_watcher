@@ -78,6 +78,8 @@ On your `rails_helper.rb`
 ```ruby
 ...
 config.include CapybaraWatcher, type: :feature
+# or
+config.include CapybaraWatcher, type: :view
 ...
 ```
 
@@ -85,7 +87,7 @@ config.include CapybaraWatcher, type: :feature
 On your `rails_helper.rb`
 ```ruby
 CapybaraWatcher.configure do |options|
-  options.timeout = 5 # Time in seconds
+  options[:timeout] = 5 # Time in seconds
 end
 ```
 
