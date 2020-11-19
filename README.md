@@ -5,15 +5,13 @@ Watch body elements and wait for changes in Capybara integration tests.
 [![Build with Ruby](http://img.shields.io/badge/made%20with-Ruby-7f1c1f.svg?style=for-the-badge&logo=ruby&labelColor=c1282c)](https://rubyonrails.org/)
 [![Powered by Vim](http://img.shields.io/badge/powered%20by-vim-019733.svg?style=for-the-badge&logo=vim&logoColor=fff&labelColor=555)](https://www.vim.org/)
 
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/ricvillagrana)
-
 ## Getting Started
 
 To use capybara watcher you only have to add `wait_for_changes` on any integration test.
 
 # How does it work
 
-Capybara Watcher gets te current body content and then watch for changes on it, a change trigger your lines of code that lies bellow the watch line.
+Capybara Watcher gets the current body content and then watch for changes on it, a change trigger your lines of code that lies bellow the watch line.
 
 Example:
 #### Approach 1
